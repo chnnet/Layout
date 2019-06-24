@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Datenarchiv</title>
+<script language="JavaScript" type="text/javascript">
+function init()
+{
+	document.login.password.focus();
+}
+</script>
+<link rel="stylesheet" type="text/css" href="chnnet.css">
+</head>
+<body onLoad="init()">
+
+<h1> Benutzeranmeldung </h1>
+<br><br><br>
+<form name="login" action="login.php" method=post>
+	<table>
+		<tr>
+		<td>Login name:</td>
+		<td><input type="text" name="loginname" size="30" maxlength="50" value="chn" /></td>
+		</tr>
+		<tr>
+		<td>Passwort</td>
+		<td><input type=password name="password" size="30" maxlength="30"/></td>
+		</tr>
+	</table>
+
+		<input type="hidden" name="dbtyp" value="mysql" />
+		<input type="hidden" name="host"  value="192.168.64.2" />
+		<input type="hidden" name="dbname"  value="datenarchiv" />
+
+<input type=submit value="Login" />
+
+</form>
+</body>
+</html>
