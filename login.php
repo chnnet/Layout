@@ -7,8 +7,8 @@ $app_benutzer = $_POST['loginname'];
 $app_passwort = $_POST['password'];
 $host = $_POST['host'];
 $dbname = $_POST['dbname'];
-$benutzer = "chn";
-$passwort = "jini1503";
+$benutzer = "root";
+$passwort = "";
 
 // DB-Connection
 try {
@@ -62,6 +62,7 @@ else {
 		echo "<ul class=\"topnav\">";
 		include ("menu.php");
 		echo "</ul>";
+		echo "<iframe name=\"main\" height=\"600\" width=\"1000\" frameborder=\"0\"></iframe>";
 		echo "</body>";
 		echo "</html>";
     }

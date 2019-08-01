@@ -45,7 +45,7 @@ $result = $con->prepare("SELECT m.name,m.pfad_file,m.target,m.pfad_icon FROM men
 $result->execute(array($keynr, $parent_id));
 
 // Home
-echo "<li><a class=\"active\" href=\"http://192.168.64.2/layouttest/index.html\">Home</a></li>";
+echo "<li><a class=\"active\" href=\"http://localhost/layouttest/index.html\">Home</a></li>";
 
 while ($row = $result->fetch()) {
 
@@ -54,11 +54,11 @@ while ($row = $result->fetch()) {
 		$pfadf = $row['pfad_file'];
 		$target = $row['target'];
 
-//		echo "<li><a href=\"http://192.168.64.2/layouttest/" . $pfadf . "\">" . $name . "</a></li>";
- 		echo "<li><a href=\"#\" onclick=\"loadDoc(" . $pfadf . ");return false;\">" . $name . "</a></li>";
+		echo "<li><a href=\"http://localhost/layouttest/" . $pfadf . "\" target=\"main\">" . $name . "</a></li>";
+// 		echo "<li><a href=\"#\" onclick=\"loadDoc(" . $pfadf . ");return false;\">" . $name . "</a></li>";
 		
 }
 
 //logout
-echo "<li class=\"right\"><a href=\"http://192.168.64.2/layouttest/logout.php\">Logout</a></td>";
+echo "<li class=\"right\"><a href=\"http://localhost/layouttest/logout.php\">Logout</a></td>";
 ?>
