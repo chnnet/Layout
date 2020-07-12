@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-Test</title>
+	<link rel="stylesheet" href="test_amenu.css">
+<h1>7: CSS-basiertes Dropdown-Menü</h1>
+<nav>
+	<ul>
+		<li><a href="#">Seite 1</a>
+		</li>
+		<li tabindex="0"><a href="#">Seite 2</a>
+			<ul class="submenu">
+				<li><a tabindex="0" href="#2a">Seite 2a</a>
+				</li>
+				<li><a tabindex="0" href="#2b">Seite 2b</a>
+				</li>
+			</ul>
+		</li>
+		<li aria-current="page"><a href="#">aktuelle Seite</a>
+		</li>
+		<li tabindex="0"><a href="#">Seite 4</a>
+			<ul class="submenu">
+				<li><a href="#4a">Seite 4a</a>
+				</li>
+				<li><a href="#4b">Seite 4b</a>
+				</li>
+				<li><a href="#4c">Seite 4c</a>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#">Seite 5</a>
+		</li>
+		<li><a href="#">Seite 6</a>
+		</li>
+	</ul>
+</nav>
+<div>
+	<p>Das Beispiel ist nun für alle Geräte einsatzbereit. Man kann die Submenüs …</p>
+	<ul>
+		<li> … mit der Maus problemlos auf- und zuklappen.
+			<li> … auf Touch-Gräten mit kleinen Viewports problemlos auf- und durch Tap auf einen
+				anderen Link zuklappen.
+				<li> … mit der Tastatur die Submenüs über das tabindex des li-Elements sichtbar machen,
+					und dann den dazugehörigen Link und die Listeneinträge des Submenüs durchtabben.
+					</ul>
+	<p>Was nicht funktioniert, ist …</p>
+	<ul>
+		<li> … eine schnelle Tastatur-Ansteuerung der einzelnen Menüpunkte im Hauptmenü ohne
+			den Umweg über die einzelnen Submenüs zu gehen
+			<li> … eine Navigation der einzelnen Punkte mithilfe der Pfeiltasten.</p>
+	</ul>
+</div>
+
+  </head>
+  <body>
+    <p>Dieser Text wird im Browserfenster angezeigt.</p>
+  </body>
+</html>
